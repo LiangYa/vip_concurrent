@@ -21,7 +21,7 @@ public class SleepTools {
     /**
      * 按照毫秒休眠
      */
-    pulic static final void ms(int seconds){
+    public static final void ms(int seconds){
         try {
             TimeUnit.MILLISECONDS.sleep(seconds);
         } catch (Exception e) {
