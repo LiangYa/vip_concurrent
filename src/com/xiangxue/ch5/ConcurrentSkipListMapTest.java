@@ -1,4 +1,4 @@
-package com.xiangxue.ch7;
+package com.xiangxue.ch5;
 
 import java.util.concurrent.ArrayBlockingQueue;
 import java.util.concurrent.ConcurrentHashMap;
@@ -12,6 +12,7 @@ import java.util.concurrent.LinkedBlockingQueue;
  * @date 2021/4/27 19:01
  */
 public class ConcurrentSkipListMapTest {
+
     public static void main(String[] args) {
         ConcurrentHashMap concurrentHashMap = new ConcurrentHashMap();
         // 为什么上面这个不使用跳表
