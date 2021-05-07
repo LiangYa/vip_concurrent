@@ -1,8 +1,6 @@
 package com.xiangxue.ch6.mypool;
 
-import java.util.Arrays;
 import java.util.concurrent.ArrayBlockingQueue;
-import java.util.concurrent.BlockingDeque;
 import java.util.concurrent.BlockingQueue;
 
 /**
