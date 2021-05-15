@@ -11,6 +11,7 @@ public class WorkTask implements Callable<Integer> {
 
     private String name;
 
+
     public WorkTask(String name) {
         this.name = name;
     }
