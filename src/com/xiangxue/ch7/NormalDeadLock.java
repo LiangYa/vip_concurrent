@@ -31,11 +31,11 @@ public class NormalDeadLock {
      */
     private static void secondToFirst() throws InterruptedException{
         String threadName = Thread.currentThread().getName();
-        synchronized (valueFirst) {
-            System.out.println(threadName+" get first");
+        synchronized (valueSecond) {
+            System.out.println(threadName+" get second");
             SleepTools.ms(100);
-            synchronized (valueSecond){
-                System.out.println(threadName+" get second");
+            synchronized (valueFirst){
+                System.out.println(threadName+" get first");
             }
         }
     }
@@ -52,7 +52,7 @@ public class NormalDeadLock {
             TestThread testThread = new TestThread("SubTestThread");
             testThread.start();
             try {
-                firstToSecond();
+                secondToFirst();
             } catch (InterruptedException e){
                 e.printStackTrace();
             }
